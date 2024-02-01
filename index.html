@@ -17,33 +17,46 @@
 
 <body>
     <div class="wraper">
-        <div class="container">
-            <img src="illustration.jpg" id="imgLogIn">
+            <div class="container">
+                <div class="block">
+                    <img src="illustration-removebg-preview.png" id="imgLogIn">
+                </div>
 
-            <h2> Libela produkt doo </h2>
+                <div class="block">
+                    <h2> Libela produkt doo </h2>
+                </div>
 
-            <select>
-                <option> 2023 </option>
-                <option> 2022 </option>
-            </select>
+                <div class="block">
+                    <select>
+                        <option> 2023 </option>
+                        <option> 2022 </option>
+                    </select>
+                </div>
 
-            <select>
-                <option> Zmajevo </option>
-                <option> Milesevo </option>
-                <option> Kucura </option>
-                <option> Zitiste </option>
-                <option> N. Orahovo </option>
-                <option> R. Krstur </option>
-            </select>
+                <div class="block">
+                    <select>
+                        <option> Zmajevo </option>
+                        <option> Milesevo </option>
+                        <option> Kucura </option>
+                        <option> Zitiste </option>
+                        <option> N. Orahovo </option>
+                        <option> R. Krstur </option>
+                    </select>
+                </div>
 
+                <div class="block">
+                    <form action="" method="post">
+                        <input type="text" id="username" placeholder="Korisnicko ime" autocomplete="off" required>
+                        <input type="password" id="password" placeholder="Lozinka" autocomplete="off" required>
+                        <div class="checkBoxDiv">
+                            <input type="checkbox" id="check" onclick="showPassword()"> Prikazi lozinku 
+                        </div>    
+                    </form>
+                </div>
 
-            <input type="text" id="username" placeholder="Korisnicko ime">
-            <input type="password" id="password" placeholder="Lozinka">
-            <div class="checkBoxDiv">
-                <input type="checkbox" id="check" onclick="showPassword()"> Prikazi lozinku 
-            </div>    
-            <button type="submit" id="submitBtn"> Potvrdi </button>
-        </div>
+                <div class="block"></div>
+                    <button type="submit" id="submitBtn" onclick="validateForm()"> Potvrdi </button>
+                </div>
     </div>
 
 
